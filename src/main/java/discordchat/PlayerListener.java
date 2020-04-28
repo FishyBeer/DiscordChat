@@ -46,7 +46,7 @@ public class PlayerListener implements Listener {
                 lastName = name;
                 msg = msg.replace("@", "");
             }
-            API.sendMessage(TextFormat.clean(name + " \u00BB " + msg));
+            API.sendMessage(TextFormat.clean("(" + Server.getInstance().getOnlinePlayers().size() + ")" + name + " \u00BB " + msg));
         }
     }
 
